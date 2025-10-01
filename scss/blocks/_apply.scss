@@ -1,0 +1,182 @@
+@use "../variables" as *;
+
+
+
+.apply {
+  padding-bottom: 0;
+  @media (max-width: 1650px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (max-width: 1400px) {
+    margin-top: 4rem;
+    padding-top: 0;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto;
+    gap: $gap;
+  }
+
+  &__empty-wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    align-self: stretch;
+    grid-row: 1 / span 2;
+    gap: $gap;
+  }
+  &__empty {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: #e7e7ea;
+    border-radius: 1rem;
+    height: 100%;
+  }
+
+  &__main {
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    align-items: stretch;
+  }
+
+  &__first-plane {
+    position: absolute;
+    right: -9rem;
+    top: -5rem;
+    max-width: 90%;
+    height: auto;
+
+    @media (max-width: 1200px) {
+      top: -1rem;
+    }
+    @media (max-width: 992px) {
+      top: -5rem;
+    }
+    @media (max-width: 768px) {
+      top: 0rem;
+      right: -7rem;
+      max-width: 100%;
+    }
+    @media (max-width: 480px) {
+      top: 6rem;
+      right: -10rem;
+      max-width: 120%;
+    }
+    @media (max-width: 360px) {
+      top: 7rem;
+      right: -6rem;
+      max-width: 130%;
+    }
+  }
+
+  &__second-plane {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: $color-block;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: $gap;
+    overflow: hidden;
+
+    &--top {
+      min-height: 20rem;
+      justify-content: space-between;
+
+      @media (max-width: 480px) {
+        justify-content: start;
+      }
+
+      > button{
+        width: max-content;
+      }
+    }
+    &--left {
+      background: linear-gradient(to bottom, #373135, #2d2023);
+      color: #fff;
+      position: relative;
+      text-align: center;
+      padding-top: 15rem;
+      align-items: center;
+
+      @media (max-width: 360px) {
+        padding-top: 10rem;
+      }
+      > button{
+        width: max-content;
+      }
+    }
+    &--right {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: $gap;
+    }
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #23233d;
+    line-height: 1.2;
+
+    &--white {
+      color: #fff;
+      margin-top: 2rem;
+    }
+  }
+
+  &__chat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  &__message {
+    border-radius: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    max-width: 70%;
+
+    &--user {
+      background: #26a4ff;
+      color: #fff;
+      align-self: flex-end;
+      margin-bottom: 0.3rem;
+    }
+    &--bot {
+      background: $color-gray;
+      color: #23233d;
+      align-self: flex-start;
+    }
+ 
+  }
+  &__support{
+    > button{
+      margin-top: 1rem;
+    }
+  }
+}

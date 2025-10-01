@@ -1,0 +1,43 @@
+@use "../variables" as *;
+
+.flights{
+  position: relative;
+  @media (max-width: 1400px) {
+   margin-top: 5rem;
+   padding-top: 0;
+  }
+  &__title{
+    margin-top: -2rem;
+    & span{
+      font-weight: 300;
+      font-size: 3.5rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__subtitle{
+    max-width: 900px;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+
+    @media (max-width: 480px) {
+      line-height: 1.4;
+      margin-top: 1rem;
+    }
+  }
+
+  &__images{
+    position: absolute;
+    top: 15rem;
+    right: 0;
+    height: auto;
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,94 @@
+@use "../variables" as *;
+
+.btn {
+  border-radius: 1.5rem;
+  background-color: $color-block;
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: $color-accent;
+    color: $color-block;
+  }
+  &--primary {
+    background-color: #393847;
+    color: $color-block;
+  }
+  &--gray {
+    background-color: $color-gray;
+    color: #32323a;
+    box-shadow: none;
+  }
+
+  &--premium {
+    background: linear-gradient(to top, #3a292b, #37292a);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.4s ease;
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+}
+.sub-text {
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 2;
+}
+.sub-title {
+  margin: 1.5rem 0 1.7rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  z-index: 2;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+.section-title {
+  max-width: 500px;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.form {
+	&__group {
+		margin-bottom: 1.4rem;
+		display: block;
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: #374151;
+
+		> span {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+
+		> input {
+			width: 100%;
+			padding: 0.6rem 0.9rem;
+			border: 2px solid #e5e7eb;
+			border-radius: 0.5rem;
+			font-family: inherit;
+			transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+			&:focus {
+				outline: none;
+				border-color: #393847c2;
+			}
+
+			&::placeholder {
+				color: #9ca3af;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+

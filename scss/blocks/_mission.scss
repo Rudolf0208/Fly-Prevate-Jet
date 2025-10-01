@@ -1,0 +1,26 @@
+@use "../variables" as *;
+
+.mission{
+  margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > div{
+       max-width: 760px;
+      text-align: center;
+      margin: 0.6rem 0;
+      font-size: 2.5rem;
+      line-height: 1.4;
+      font-weight: 500;
+      opacity: 0.6;
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+      }
+    }
+}

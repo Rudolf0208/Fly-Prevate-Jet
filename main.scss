@@ -1,0 +1,65 @@
+@use "./scss/variables" as *;
+@use "./scss/normalize" as *;
+
+@use "./scss/blocks/_header.scss";
+@use"./scss/blocks/_ui.scss";
+@use "./scss/blocks/_welcome.scss";
+@use "./scss/blocks/_mission.scss";
+@use"./scss/blocks/_flights.scss";
+@use"./scss/blocks/_booked.scss";
+@use "./scss/blocks/__costs.scss";
+@use "./scss/blocks/_apply.scss";
+@use "./scss/blocks/_faq.scss";
+@use "./scss/blocks/_modal.scss";
+
+
+section{
+  @media (max-width: 1650px) {
+    padding: 8rem  1rem;
+  }
+  @media (max-width: 480px) {
+    padding: 2rem  1rem;
+  }
+}
+html {
+  font-size: 20px;
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-family;
+  font-weight: 400;
+  overflow-x: hidden;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.will-change-transform,
+.fade-in,
+.zoom-in-fade-in,
+.right-fade-in{
+  will-change: transform;
+}
+
+#smooth-content{
+  will-change: transform;
+}
+
+.non-select-image{
+  user-select: none;
+  pointer-events: none;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translate(0);
+}
+

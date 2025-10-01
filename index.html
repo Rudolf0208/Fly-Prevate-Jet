@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Jet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+  <header class="header ">
+    <div class="container">
+      <div class="header__body">
+        <a href="#" class="header__logo">LetsFly</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#welcome">Intro</a></li>
+            <li class="header__item"><a class="header__link" href="#about-us">About</a></li>
+            <li class="header__item"><a class="header__link" href="#costs">Costs</a></li>
+            <li class="header__item"><a class="header__link" href="#apply">Features</a></li>
+            <li class="header__item"><a class="header__link" href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main class="welcome" id="welcome">
+        <div class="container">
+          <div class="welcome__body zoom-in-fade-in ">
+            <span class="welcome__text sub-text">Personal jets</span>
+            <h1 class="welcome__title "><span>Luxury.</span> Affordable.</h1>
+            <p class="welcome__subtitle sub-title">We believe loyalty should be rewarded</p>
+
+            <div class="welcome__cta">
+              <button class="btn btn--gray">Learn more</button>
+              <button class="btn btn--primary" id="open-modal-button">Let's Fly</button>
+            </div>
+            <div class="welcome__img">
+              <img class="welcome__plane non-select-image" draggable="false" src="./assets/images/plane/06.png"
+                alt="Plane">
+            </div>
+            <div class="welcome__bg-clouds">
+              <img src="./assets/images/clouds/left-cloud.png" alt="cloud" class="fade-in non-select-image">
+              <img src="./assets/images/clouds/main-cloud.png" alt="cloud" class="fade-in non-select-image">
+              <img src="./assets/images/clouds/right-cloud.png" alt="cloud" class="right-fade-in non-select-image">
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="mission">
+        <div> One simple fly rate. </div>
+        <div>A discount that gets better and better.</div>
+        <div>Apply in minutes.</div>
+        <div>Built for rich people.</div>
+      </div>
+
+      <section class="flights" id="about-us">
+        <div class="container">
+          <div class="flights__body">
+            <span class="flights__text sub-text">Experience our </span>
+            <h2 class="flights__title section-title"><span>Luxury</span> Flights.</h2>
+            <p class="flights__subtitle sub-title">Experience unmatched luxury in the skies. Our private jets offer
+              top-tier
+              comfort, personalized service, and exquisite amenities for every journey</p>
+            <button class="btn btn--gray">Book now</button>
+          </div>
+          <div class="flights__img">
+            <img src="./assets/images/plane/05.png" alt="Plane" class="flights__images non-select-image"
+              draggable="false">
+          </div>
+        </div>
+      </section>
+
+      <section class="booked flights">
+        <div class="container">
+          <div class="booked__body">
+            <div class=" booked__top flights__body">
+              <span class="booked__text sub-text">Seamlessly </span>
+              <h2 class=" booked__title flights__title section-title">
+                <span>Instantly</span> Booked.
+              </h2>
+            </div>
+            <div class=" booked__img flights__img">
+              <img src="./assets/images/plane/01.png" alt="Plane" class=" booked__img  non-select-image"
+                draggable="false">
+            </div>
+
+            <div class="booked__bottom">
+              <h3 class="booked__bottom--heading">Every. Single. Year.</h3>
+              <p class=" booked__subtitle flights__subtitle sub-title">
+                Enjoy new, exclusive perks and benefits every <br> single year with our luxury flight services. <br>
+                </br>
+                We believe loyalty should be rewarded.
+                <button class="btn">Get Started</button>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="costs" id="costs">
+        <div class="container">
+          <div class="costs__sub-heading fade-in">Insanly Low</div>
+          <h2 class="costs__title fade-in">Costs.</h2>
+          <img src="./assets/images/plane/03.png" alt="plane" class="costs__images non-select-image" draggable="false">
+
+          <div class="costs__bottom">
+            <div class="costs__bottom-left">
+              <h3 class="booked__bottom--heading">Personal discounts</h3>
+              <p class=" booked__subtitle flights__subtitle sub-title">
+                Unlock tailored savings just tor you. Exclusive <br>
+                personal discounts on our luxury private jet services.
+              </p>
+              <div class="costs__bottom-left--buttons">
+                <button class="btn btn--gray">Learn more</button>
+                <button class="btn ">Get Started</button>
+              </div>
+            </div>
+            <div class="costs__bottom-right">
+              <div class="costs__bottom-right--num">
+                5.25
+              </div>
+              <div class="costs__bottom-right--wrapper">
+                <div class="costs__bottom-right--interest">
+                  <span>%</span>
+                  <span>PA</span>
+                </div>
+                <div class="costs__bottom-right--desc">
+                  Estimated Rate
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="apply" id="apply">
+        <div class="apply__body">
+          <div class="apply__empty-wrapper">
+            <div class="apply__empty"></div>
+            <div class="apply__empty"></div>
+          </div>
+
+          <div class="apply__main">
+            <div class="apply__card apply__card--top">
+              <span class="apply__title">Apply in minutes.</span>
+              <button class="btn btn--gray">Learn more</button>
+              <img src="./assets/images/plane/02.png" alt="plane" class="apply__first-plane non-select-image"
+                draggable="false">
+            </div>
+
+            <div class="apply__row">
+              <div class="apply__card apply__card--left">
+                <img src="./assets/images/plane/04.png" alt="plane" class="apply__second-plane non-select-image"
+                  draggable="false">
+                <div class="apply__title apply__title--white">Backed by American's leading airlines.</div>
+                <button class="btn btn--premium">Learn more</button>
+              </div>
+
+
+              <div class="apply__card apply__card--right">
+                <div class="apply__chat">
+                  <div class="apply__message apply__message--user">
+                    Nice. How can I switch to let`sFly?
+                  </div>
+                  <div class="apply__message apply__message--bot">
+                    Tap the "Refinance Now" button to get started. If you have any questions, I'm here to help.
+                  </div>
+                  <div class="apply__message apply__message--user">
+                    👍 All done!
+                  </div>
+                </div>
+                <div class="apply__support">
+                  <div class="apply__title">Got a question?<br>
+                    We're here to help.
+                  </div>
+                  <button class="btn btn--gray">Chat with us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apply__empty-wrapper">
+            <div class="apply__empty"></div>
+            <div class="apply__empty"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="faq__title">In case you <br>
+            missed anything.</h2>
+          <div class="faq__body">
+            <div class="faq__item">
+              <button class="faq__question">Are there really no fees?</button>
+              <div class="faq__answer">No fees. No hidden costs. Just a simple, low rate.</div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question">How does Let's Fly annual discount bump work?</button>
+              <div class="faq__answer">Stable </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question">Am I eligible for Let's Fly?</button>
+              <div class="faq__answer">Yes </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question">What does the application process look like?</button>
+              <div class="faq__answer">Call the number and they will explain everything to you</div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question">What is Let's Fly relationship to CommBank?</button>
+              <div class="faq__answer">excellent</div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question">Can I offset interest in my Let's Fly account?</button>
+              <div class="faq__answer">Yes</div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question">How does Let's Fly make sure my data and personal information is
+                safe?</button>
+              <div class="faq__answer">Fine</div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question">What if I need to get in touch with someone?</button>
+              <div class="faq__answer">call me</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__container">
+      <div class="modal__content">
+        <button class="modal__close" id="close-modal-button">&times;</button>
+
+        <div class="modal__header">
+          <h2 class="modal__title">Ready to fly?</h2>
+          <p class="modal__subtitle">Fill out the form below and we'll get back to you shortly.</p>
+        </div>
+
+        <form class="form" id="application-form">
+          <div class="form__body">
+            <label class="form__group">
+              <span>Full name</span>
+              <input type="text" placeholder="Enter your full name" name="name" id="name" required>
+            </label>
+
+            <label class="form__group">
+              <span>Email</span>
+              <input type="email" placeholder="Enter your email" name="email" id="email" required>
+            </label>
+
+            <div class="form__group">
+              <button type="submit" class="btn btn--primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+
+  <script src="./js/faq.js" defer></script>
+  <script src="./js/scroll.js" defer></script>
+  <script src="./js/modal.js" defer></script>
+</body>
+
+</html>
